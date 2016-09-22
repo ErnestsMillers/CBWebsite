@@ -3,47 +3,143 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Ernests Millers</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href="mediaq.css" rel="stylesheet">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!--********************************************************************
-                LANDING PAGE - HEADER
-        *********************************************************************-->
-        <h1>Hello world!</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Carl Bradshaw</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="blinking.css">
+    <link href="mediaq.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/plugins/typed.js-master/js/typed.js"></script>
+    <script>
+    $(function(){
 
-        <!--********************************************************************
-                SCRIPTS
-        *********************************************************************-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 2000,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+    </script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+
+    <!--************************************************************************
+      Page Title - typed.js
+    *************************************************************************-->
+
+    <section class="container fadein" id="pagetitle">
+      <div id="typed-strings">
+        <p>Hello!</p>
+        <p>Welcome to my website.</p>
+      </div>
+      <span id="typed" style="white-space:pre;"></span></br>
+    </section>
+
+
+
+    <!--************************************************************************
+      Page Title - typed.js
+    *************************************************************************-->
+
+    <section class="container fadeintwo" id="pagecontainer">
+      <h2>Carl Bradshaw</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+        accumsan justo vel quam tincidunt, id efficitur ligula eleifend. Duis
+        iaculis purus elementum sem efficitur, et lacinia est tincidunt. Quisque
+        semper nunc at purus congue viverra. Nam scelerisque risus a ex ultricies
+        mattis. Maecenas lacinia sit amet est ut eleifend. Ut porttitor nibh ut
+        ligula pulvinar malesuada. Cum sociis natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus. Aliquam eget leo pellentesque
+        sapien pretium faucibus in at dolor. Aliquam bibendum sit amet dolor et
+        sollicitudin. Aenean eu sem odio. Praesent condimentum feugiat pellentesque.
+        Curabitur tincidunt neque et leo vulputate, vel efficitur justo elementum.
+        Proin vehicula bibendum ligula, sed imperdiet purus consectetur id.</p>
+    </section>
+
+    <section class="container fadeintwo" id="projects">
+      <h3>Projects</h3>
+      <div class="projects-container clearfix">
+        <div class="projectsexample">
+          <h4>Random Script</h4>
+        </div>
+        <div class="projectsexample">
+          <h4>Random Script</h4>
+        </div>
+        <div class="projectsexample">
+          <h4>Random Script</h4>
+        </div>
+        <div class="projectsexample">
+          <h4>Random Script</h4>
+        </div>
+        <div class="projectsexample">
+          <h4>Random Script</h4>
+        </div>
+        <div class="projectsexample">
+          <h4>Random Script</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="container fadeintwo" id="contact">
+      <h3>Contact</h3>
+    </section>
+
+
+
+
+
+
+    <!--************************************************************************
+      SCRIPTS
+    *************************************************************************-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+
+    <script src="js/plugins/typed.js-master/js/typed.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
 </html>

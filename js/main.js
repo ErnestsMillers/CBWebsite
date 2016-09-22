@@ -26,3 +26,10 @@ $(document).ready(function(){
 	});
 
 });
+
+
+$(document).ready(function() {
+  $('.fadein').fadeIn(2000, function() {
+    $('.fadeintwo').delay(3000).fadeIn(2000);
+  });
+});

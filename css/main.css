@@ -1,0 +1,54 @@
+/* BOX SIZING */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* CLEARFIX */
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+/* BASE RULES */
+.container {
+  max-width: 600px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0; }
+
+.fadein {
+  display: none; }
+
+.fadeintwo {
+  display: none; }
+
+/* PAGETITLE */
+* {
+  font-family: 'EB Garamond', serif; }
+
+span {
+  font-size: 30px; }
+
+#pagetitle {
+  margin-top: 100px; }
+
+#pagecontainer {
+  padding-top: 30px; }
+
+.projects-container {
+  width: 100%; }
+
+.projectsexample {
+  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid black;
+  float: left; }

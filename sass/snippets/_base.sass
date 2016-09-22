@@ -1,0 +1,32 @@
+/* BOX SIZING */
+html
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+*, *:before, *:after
+  -webkit-box-sizing: inherit
+  -moz-box-sizing: inherit
+  box-sizing: inherit
+
+/* CLEARFIX */
+.clearfix:after
+  content: "."
+  visibility: hidden
+  display: block
+  height: 0
+  clear: both
+
+/* BASE RULES */
+
+.container
+  max-width: 600px
+  width: 50%
+  margin: 0 auto
+  padding: 0
+
+.fadein
+  display: none
+
+.fadeintwo
+  display: none
